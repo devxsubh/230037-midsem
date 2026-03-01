@@ -8,39 +8,21 @@
       "submission_date": "2026-03-01"
     },
   
-    "selected_paper": {
-      "title": "Online Learning for Matrix Factorization and Sparse Coding",
-      "authors": ["Julien Mairal", "Francis Bach", "Jean Ponce", "Guillermo Sapiro"],
-      "venue": "Journal of Machine Learning Research (JMLR)",
-      "volume": 11,
-      "pages": "19-60",
-      "year": 2010,
-      "url": "https://jmlr.org/papers/v11/mairal10a.html",
-      "method_category": "GMM / EM-based optimization (alternating EM-style sparse coding and dictionary update)",
-      "core_rank": "A*",
-      "primary_contribution": "Proposes an online optimization algorithm for dictionary learning and sparse coding that processes one sample at a time using surrogate objective functions built from running aggregates, with formal convergence guarantees under i.i.d. assumptions. Theorem 1 establishes almost-sure convergence of the objective sequence.",
-      "dataset_used": "Natural image patches extracted from BSDS300 (Berkeley Segmentation Dataset — freely available at https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/). Genomic microarray data (publicly available from GEO repository). For reproduction purposes, any UCI dataset with 2+ continuous numeric features is sufficient, or random image patches from any public image.",
-      "why_selected_over_alternatives": "Selected over Gemini-suggested alternatives (Taylor et al. 2011 RBM time-series, Naim & Gildea ICML 2012 EM convergence, Ye et al. AISTATS 2011 ADMM-SVM) because: (1) sklearn.decomposition.DictionaryLearning directly implements Algorithm 1 from this paper, removing any implementation barrier; (2) JMLR Vol. 11 is unambiguously CORE A*; (3) the EM-style alternating optimization is substantive and provably equivalent to a generalized EM framework; (4) convergence is theoretically guaranteed, making theoretical questions in Part C answerable with precision."
-    },
-  
     "llm_tools_used": [
       {
         "tool_name": "Claude",
         "model": "Claude Sonnet 4.6",
-        "provider": "Anthropic",
-        "primary_role": "Paper identification, deep algorithmic analysis, mathematical verification, failure mode analysis, inference mechanism understanding, and final selection justification"
+        "provider": "Anthropic"
       },
       {
         "tool_name": "Gemini",
-        "model": "Gemini (version unspecified)",
-        "provider": "Google",
-        "primary_role": "Broad paper survey across all three method categories (ARIMA, GMM, SVM) to establish a comparison landscape against which Claude's recommendation was evaluated"
+        "model": "Gemini 3.1 Flash",
+        "provider": "Google"
       },
       {
         "tool_name": "ChatGPT",
-        "model": "GPT-4 (version unspecified)",
-        "provider": "OpenAI",
-        "primary_role": "Strategic understanding of assignment rubric, grading weight analysis, LLM disclosure schema requirements, collision risk strategy, and final cross-validation of paper selection across all three LLM recommendations"
+        "model": "o1-preview",
+        "provider": "OpenAI"
       }
     ],
   
@@ -49,7 +31,7 @@
         "interaction_id": 1,
         "date": "2026-03-01",
         "tool_name": "Gemini",
-        "model": "Gemini (version unspecified)",
+        "model": "Gemini 3.1 Flash",
         "provider": "Google",
         "purpose": "Initial broad survey — getting one strong paper recommendation per algorithmic category (ARIMA, GMM, SVM) from CORE A* venues in 2009-2012 to establish a comparison landscape",
         "prompt": "I have a machine learning assignment that requires me to select ONE paper published between 2009 and 2012 in a CORE A* venue (NeurIPS, ICML, JMLR, CVPR, AISTATS, etc.) whose primary contribution is based on ARIMA, GMM, or SVM. The paper must be methodological (not a dataset or benchmark paper), reproducible on a CPU-only laptop, and use public data. Suggest one strong candidate for each category.",
@@ -63,7 +45,7 @@
         "interaction_id": 2,
         "date": "2026-03-01",
         "tool_name": "ChatGPT",
-        "model": "GPT-4 (version unspecified)",
+        "model": "o1-preview",
         "provider": "OpenAI",
         "purpose": "Gaining a comprehensive strategic understanding of the full assignment scope — grading rubric weights, the LLM disclosure JSON schema, collision avoidance strategy, and reproducibility requirements — before beginning deep paper research",
         "prompt": "I have this advanced machine learning mid-semester exam assignment (pasted full PDF text). Provide a comprehensive expert-level analysis covering: (1) what the grading rubric actually rewards vs. penalizes, (2) what makes a paper selection risky vs. safe, (3) the exact purpose of each field in the required LLM disclosure JSON schema, (4) CPU reproducibility strategies for papers from this era, and (5) the first-come-first-select collision risk and how to avoid it.",
@@ -189,7 +171,7 @@
         "interaction_id": 11,
         "date": "2026-03-01",
         "tool_name": "ChatGPT",
-        "model": "GPT-4 (version unspecified)",
+        "model": "o1-preview",
         "provider": "OpenAI",
         "purpose": "Final independent cross-validation — comparing all candidate papers across all three LLMs to confirm Mairal et al. 2010 is the optimal selection before committing to the irreversible Google Form submission",
         "prompt": "I have paper recommendations from three LLMs. Claude recommended: Mairal et al. 2010 JMLR Vol. 11 — 'Online Learning for Matrix Factorization and Sparse Coding' (GMM/EM-based, sklearn.decomposition.DictionaryLearning implements it directly). Gemini recommended: (1) Taylor, Hinton & Roweis 2011 JMLR — RBM-based time-series (ARIMA category, borderline fit); (2) Naim & Gildea ICML 2012 — anti-annealing EM for unbalanced GMMs; (3) Ye, Chen & Xie AISTATS 2011 — ADMM SVM. Evaluate all four papers on: (a) method alignment with the assignment's ARIMA/GMM/SVM constraint, (b) CPU reproducibility confidence, (c) CORE A* venue certainty, (d) collision risk in a class of ~50 students, and (e) theoretical depth available for Part C defense.",
