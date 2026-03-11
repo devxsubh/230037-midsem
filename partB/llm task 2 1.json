@@ -1,0 +1,44 @@
+{
+  "student_metadata": {
+    "name": "Subham Mahapatra",
+    "roll_number": "230037",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-07"
+  },
+  "task_tag": "Task 2.1",
+  "code_used_verbatim": true,
+  "student_modification": "Adjusted n_samples and n_features for runtime (150, 40). Dataset justification and preprocessing text written by me; make_classification and train_test_split call structure was from LLM, then modified with our chosen parameters.",
+  "llm_tools_used": [{"tool_name": "Cursor", "model": "Claude", "provider": "Anthropic"}],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-07",
+      "tool_name": "Cursor",
+      "model": "Claude",
+      "provider": "Anthropic",
+      "purpose": "Dataset loading and train/test split for Part B using sklearn.",
+      "prompt": "Write code to load a toy time-series-like dataset from sklearn (make_classification) and split into train/test for shapelet experiments.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided make_classification and train_test_split code; I changed n_samples and n_features and added the data save cell.",
+      "student_verification": "I ran the code and verified shapes and class counts.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "tool": "Cursor",
+      "prompt": "Write code to load a toy time-series-like dataset from sklearn (make_classification) and split into train/test for shapelet experiments.",
+      "why_important": "This produced the Task 2.1 data-loading cell; I modified parameters and added documentation."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that code from the LLM was modified (parameters and comments) as described above. I understand the code and can explain it in Part C.",
+    "understanding_acknowledged": true,
+    "signature": "Subham Mahapatra",
+    "date": "2026-03-07"
+  }
+}

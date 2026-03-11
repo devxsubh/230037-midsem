@@ -1,0 +1,44 @@
+{
+  "student_metadata": {
+    "name": "Subham Mahapatra",
+    "roll_number": "230037",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-07"
+  },
+  "task_tag": "Task 3.2",
+  "code_used_verbatim": false,
+  "student_modification": "Failure scenario (high noise) was chosen by me; code for adding noise and comparing accuracy was written with LLM help. I wrote the explanation linking to Task 1.2 assumptions and the suggested modification.",
+  "llm_tools_used": [{"tool_name": "Cursor", "model": "Claude", "provider": "Anthropic"}],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-07",
+      "tool_name": "Cursor",
+      "model": "Claude",
+      "provider": "Anthropic",
+      "purpose": "Implement a failure-mode experiment for shapelets.",
+      "prompt": "Suggest a failure scenario for Logical-Shapelets (e.g. noise, many classes, short series) and write code to demonstrate it with a plot.",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Suggested noise as a failure mode; I implemented the low/high noise comparison and wrote the 5–7 sentence explanation and modification suggestion.",
+      "student_verification": "I linked the failure to Assumption 1 and 2 from Task 1.2 and verified the plot saves to results/.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "tool": "Cursor",
+      "prompt": "Suggest a failure scenario for Logical-Shapelets (e.g. noise, many classes, short series) and write code to demonstrate it with a plot.",
+      "why_important": "Basis for Task 3.2; I chose noise and wrote the full analysis."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that the failure mode and its explanation are mine; code was assisted by LLM and modified by me.",
+    "understanding_acknowledged": true,
+    "signature": "Subham Mahapatra",
+    "date": "2026-03-07"
+  }
+}

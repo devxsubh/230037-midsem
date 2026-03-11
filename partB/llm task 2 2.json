@@ -1,0 +1,44 @@
+{
+  "student_metadata": {
+    "name": "Subham Mahapatra",
+    "roll_number": "230037",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-07"
+  },
+  "task_tag": "Task 2.2",
+  "code_used_verbatim": false,
+  "student_modification": "Implementation is in shapelets.py written with LLM assistance; I adapted variable names, added paper references in comments, and integrated get_split_labels and prediction. No raw paste without modification.",
+  "llm_tools_used": [{"tool_name": "Cursor", "model": "Claude", "provider": "Anthropic"}],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-07",
+      "tool_name": "Cursor",
+      "model": "Claude",
+      "provider": "Anthropic",
+      "purpose": "Implement shapelet discovery (Algorithm 1, sdist, bestIG) in Python.",
+      "prompt": "Implement shapelet discovery for Logical-Shapelets: z-normalize subsequences, sdist as min over alignments of normalized Euclidean distance, orderline, best information gain threshold, return best shapelet and tau.",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Provided structure for sdist and best_ig; I wrote shapelets.py with paper citations and class mapping logic.",
+      "student_verification": "I checked sdist and information gain against Eq. 2 and Definition 3 in the paper.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "tool": "Cursor",
+      "prompt": "Implement shapelet discovery for Logical-Shapelets: z-normalize subsequences, sdist as min over alignments of normalized Euclidean distance, orderline, best information gain threshold, return best shapelet and tau.",
+      "why_important": "Core implementation for Task 2.2; I integrated it into shapelets.py with paper references."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that the shapelet code was developed with LLM help but modified and annotated by me. I can explain Algorithm 1 and the code in Part C.",
+    "understanding_acknowledged": true,
+    "signature": "Subham Mahapatra",
+    "date": "2026-03-07"
+  }
+}

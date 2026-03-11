@@ -1,0 +1,44 @@
+{
+  "student_metadata": {
+    "name": "Subham Mahapatra",
+    "roll_number": "230037",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-07"
+  },
+  "task_tag": "Task 2.3",
+  "code_used_verbatim": true,
+  "student_modification": "Confusion matrix and shapelet plot code was based on LLM suggestion; I changed figure layout, titles, and save path to results/. Reproducibility Checklist text is my own.",
+  "llm_tools_used": [{"tool_name": "Cursor", "model": "Claude", "provider": "Anthropic"}],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-07",
+      "tool_name": "Cursor",
+      "model": "Claude",
+      "provider": "Anthropic",
+      "purpose": "Plot confusion matrix and shapelet for Task 2.3.",
+      "prompt": "Write matplotlib/seaborn code to plot a confusion matrix and a line plot of a 1D shapelet array, then save to results/task2_confusion_and_shapelet.png.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided heatmap and plot structure; I adjusted labels and save path.",
+      "student_verification": "I ran the cell and confirmed the figure is saved correctly.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "tool": "Cursor",
+      "prompt": "Write matplotlib/seaborn code to plot a confusion matrix and a line plot of a 1D shapelet array, then save to results/task2_confusion_and_shapelet.png.",
+      "why_important": "Produced the Task 2.3 visualization; I modified layout and path."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that visualization code was modified as described. The Reproducibility Checklist is my own wording.",
+    "understanding_acknowledged": true,
+    "signature": "Subham Mahapatra",
+    "date": "2026-03-07"
+  }
+}

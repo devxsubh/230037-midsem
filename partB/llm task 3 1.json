@@ -1,0 +1,44 @@
+{
+  "student_metadata": {
+    "name": "Subham Mahapatra",
+    "roll_number": "230037",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-07"
+  },
+  "task_tag": "Task 3.1",
+  "code_used_verbatim": false,
+  "student_modification": "Ablation logic (single vs AND, max_len 5 vs 6) was written with LLM help; I wrote the bar plots and interpretation text myself and set the exact parameters.",
+  "llm_tools_used": [{"tool_name": "Cursor", "model": "Claude", "provider": "Anthropic"}],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-07",
+      "tool_name": "Cursor",
+      "model": "Claude",
+      "provider": "Anthropic",
+      "purpose": "Design two ablations for Logical-Shapelets: one component at a time.",
+      "prompt": "Suggest two independent ablations for the Logical-Shapelets method: remove or simplify one component each (e.g. logical AND, or search space), and compare performance with the full method.",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Suggested logical combination and search range as ablation targets; I implemented eval_accuracy, eval_accuracy_maxlen, and plots.",
+      "student_verification": "I ran the notebook and verified the figures save to results/.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "tool": "Cursor",
+      "prompt": "Suggest two independent ablations for the Logical-Shapelets method: remove or simplify one component each (e.g. logical AND, or search space), and compare performance with the full method.",
+      "why_important": "Guided Task 3.1 design; I implemented and interpreted the experiments."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that ablation design and interpretation are mine; code was written with LLM assistance and modified by me.",
+    "understanding_acknowledged": true,
+    "signature": "Subham Mahapatra",
+    "date": "2026-03-07"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "student_metadata": {
+    "name": "Subham Mahapatra",
+    "roll_number": "230037",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-07"
+  },
+  "task_tag": "Task 4.2",
+  "code_used_verbatim": false,
+  "student_modification": "Task 4.2 is LLM usage disclosure. This JSON file and the other nine llm task *.json files were structured following the Part A format; I filled in task_tag, code_used_verbatim, and student_modification for each task.",
+  "llm_tools_used": [{"tool_name": "Cursor", "model": "Claude", "provider": "Anthropic"}],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-07",
+      "tool_name": "Cursor",
+      "model": "Claude",
+      "provider": "Anthropic",
+      "purpose": "Create the Part B LLM disclosure JSON structure with task tag and code_used_verbatim.",
+      "prompt": "What fields are required in each Part B LLM disclosure file (llm task X Y.json)? Include task tag, code used verbatim, student modification.",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Confirmed required fields; I created all 10 files and filled them with my actual usage and modifications.",
+      "student_verification": "I checked the Part B PDF and ensured each file has task_tag, code_used_verbatim, and student_modification where applicable.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "tool": "Cursor",
+      "prompt": "What fields are required in each Part B LLM disclosure file (llm task X Y.json)? Include task tag, code used verbatim, student modification.",
+      "why_important": "Ensured all 10 disclosure files meet the rubric requirements."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that all 10 LLM disclosure files are complete and accurate for Part B.",
+    "understanding_acknowledged": true,
+    "signature": "Subham Mahapatra",
+    "date": "2026-03-07"
+  }
+}

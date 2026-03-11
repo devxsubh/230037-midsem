@@ -1,0 +1,44 @@
+{
+  "student_metadata": {
+    "name": "Subham Mahapatra",
+    "roll_number": "230037",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-07"
+  },
+  "task_tag": "Task 4.1",
+  "code_used_verbatim": false,
+  "student_modification": "N/A — Task 4.1 is the written report (report.pdf). Report content was drafted with LLM assistance; I rewrote and verified against my notebook results.",
+  "llm_tools_used": [{"tool_name": "Cursor", "model": "Claude", "provider": "Anthropic"}],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-07",
+      "tool_name": "Cursor",
+      "model": "Claude",
+      "provider": "Anthropic",
+      "purpose": "Draft the Part B report sections: summary, reproduction, ablations, failure mode, reflection.",
+      "prompt": "Help me write a 4-page report for Part B: one-paragraph paper summary, reproduction setup and result with gap commentary, two ablation findings, failure mode explanation, and short reflection (what I could not implement, what surprised me, what I would revisit).",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Provided structure and phrasing; I adapted to match my actual notebooks and results and added honest reflection.",
+      "student_verification": "I cross-checked every claim in the report against the notebooks and the paper.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "tool": "Cursor",
+      "prompt": "Help me write a 4-page report for Part B: one-paragraph paper summary, reproduction setup and result with gap commentary, two ablation findings, failure mode explanation, and short reflection (what I could not implement, what surprised me, what I would revisit).",
+      "why_important": "Used to draft report.md; I rewrote to reflect my actual work and results."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that the report content is my own synthesis; LLM was used for drafting and I verified all content against my notebooks.",
+    "understanding_acknowledged": true,
+    "signature": "Subham Mahapatra",
+    "date": "2026-03-07"
+  }
+}
